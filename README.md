@@ -5,3 +5,5 @@ Zhang, Z., Yan, C., Mesa, D. A., Sun, J., & Malin, B. A. (2019). Ensuring electr
 
 ## Requirement
 tensorflow 1.7
+
+## A new version based on tf 2.4 is uploaded
