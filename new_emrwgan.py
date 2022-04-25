@@ -185,6 +185,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('gpu', type=str)
     parser.add_argument('num_labels', type=str)
+    parser.add_argument('dimension', type=int)
     # number of labels, if zero, then non-label version will be used
     args = parser.parse_args()
 
@@ -199,6 +200,6 @@ if __name__ == '__main__':
 
     BATCHSIZE = 1000
     Z_DIM = 128
-    G_DIMS = [384, 384, 384, 384, 384, 384, 2591]
+    G_DIMS = [384, 384, 384, 384, 384, 384, args.dimension]
     D_DIMS = [384, 384, 384, 384, 384, 384]
     train()
